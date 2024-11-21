@@ -14,7 +14,7 @@ export const Login = () => {
 
     try {
       const response = await fetch(
-        `https://portfolio-project-df6w.onrender.com/login`,
+        "https://portfolio-project-df6w.onrender.com/login",
         {
           method: "POST",
           body: JSON.stringify({ email, password }),
