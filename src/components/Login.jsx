@@ -13,12 +13,15 @@ export const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/login", {
-        method: "POST",
-        body: JSON.stringify({ email, password }),
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-      });
+      const response = await fetch(
+        `https://portfolio-project-df6w.onrender.com/ login`,
+        {
+          method: "POST",
+          body: JSON.stringify({ email, password }),
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
       if (!response.ok) {
         const errorMssg = await response.json();
         console.log(errorMssg);
