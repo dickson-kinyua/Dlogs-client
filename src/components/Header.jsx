@@ -92,7 +92,7 @@ export const Header = () => {
 
 
 
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row gap-4">
 
           {
             menus.filter(m => m.requiresLogin === !!loggedUser?.email).map(menu => (
