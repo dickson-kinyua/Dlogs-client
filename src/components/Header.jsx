@@ -8,9 +8,12 @@ export const Header = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch("http://localhost:5000/profile", {
-          credentials: "include",
-        });
+        const response = await fetch(
+          "https://portfolio-project-df6w.onrender.com/profile",
+          {
+            credentials: "include",
+          }
+        );
 
         if (!response.ok) {
           const errorMessage = await response.json();
